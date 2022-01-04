@@ -28,7 +28,7 @@ body {
 .card {
   width: 100%;
   max-width: 450px;
-  height: 700px;
+  padding-bottom: 50px;
   border-radius: 20px;
   background-image: url("./images/illustration-hero.svg");
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ p {
 .plan a {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--bright-blue);
 }
 
@@ -122,7 +122,7 @@ p {
   background-color: var(--bright-blue);
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
   cursor: pointer;
   box-shadow: 0px 20px 20px rgb(219, 216, 251);
@@ -136,10 +136,10 @@ p {
   width: auto;
   margin-top: 35px;
   align-self: center;
-  background-color: white;
+  background-color: transparent;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--desaturated-blue);
   cursor: pointer;
 }
@@ -158,4 +158,49 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 530px){
+.card {
+  max-width: 330px;
+  padding-bottom: 25px;
+  background-size: 330px 160px;
+}
+
+.card-text {
+  margin-top: 190px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h3, p {
+  font-size: 15px;
+  margin: 0px auto;
+  line-height: 25px;
+}
+
+.plan {
+  max-width: 280px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+.plan img {
+  padding-left: 17px;
+}
+
+.flex-item {
+  padding-right: 17px;
+}
+
+.button {
+  max-width: 280px;
+}
+
+.button #reset {
+  margin-top: 20px;
+}
+
 }
